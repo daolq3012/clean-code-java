@@ -74,7 +74,7 @@ getUser();
 ```
 
 
-**[⬆ về đầu trang](#table-of-contents)**
+**[⬆ về đầu trang](#mục-lục)**
 
 ### Sử dụng các tên có thể tìm kiếm được
 Chúng ta sẽ đọc code nhiều hơn là viết chúng. Điều quan trọng là code chúng ta
@@ -98,7 +98,7 @@ public static final int MILLISECONDS_IN_A_DAY = 86400000;
 setTimeout(blastOff, MILLISECONDS_IN_A_DAY);
 
 ```
-**[⬆ về đầu trang](#table-of-contents)**
+**[⬆ về đầu trang](#mục-lục)**
 
 ### Sử dụng những biến có thể giải thích được
 **Không tốt:**
@@ -116,7 +116,7 @@ const [, city, zipCode] = address.match(cityZipCodeRegex) || [];
 saveCityZipCode(city, zipCode);
 ```
 
-**[⬆ về đầu trang](#table-of-contents)**
+**[⬆ về đầu trang](#mục-lục)**
 
 ### Tránh hại não người khác
 Tường minh thì tốt hơn là ẩn.
@@ -151,7 +151,7 @@ for (String location : locations) {
     dispatch(location);
  }
 ```
-**[⬆ về đầu trang](#table-of-contents)**
+**[⬆ về đầu trang](#mục-lục)**
 
 ### Đừng thêm những ngữ cảnh không cần thiết
 Nếu tên của lớp hay đối tượng của bạn đã nói lên điều gì đó rồi, đừng lặp lại điều đó trong tên biến nữa.
@@ -181,7 +181,7 @@ void paintCar(Car car) {
   car.color = "Red";
 }
 ```
-**[⬆ về đầu trang](#table-of-contents)**
+**[⬆ về đầu trang](#mục-lục)**
 
 ## **Hàm**
 ### Đối số của hàm (lý tưởng là ít hơn hoặc bằng 2)
@@ -196,7 +196,7 @@ nhiều việc rồi đấy. Trong trường hợp ngược lại, phần lớn 
 tượng cấp cao sẽ là đủ để làm đối số.
 
 
-**[⬆ về đầu trang](#table-of-contents)**
+**[⬆ về đầu trang](#mục-lục)**
 
 
 ### Hàm chỉ nên giải quyết một vấn đề
@@ -330,7 +330,7 @@ const newName = splitIntoFirstAndLastName(name);
 console.log(name); // 'Ryan McDermott';
 console.log(newName); // ['Ryan', 'McDermott'];
 ```
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mục-lục)**
 
 ### Đóng gói các điều kiện
 
@@ -352,7 +352,7 @@ if (shouldShowProgressBar(fsmInstance, listNodeInstance)) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mục-lục)**
 
 ### Trách những điều kiện phủ định
 
@@ -378,7 +378,7 @@ if (isDOMNodePresent(node)) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mục-lục)**
 
 ### Tránh điều kiện
 Đây dường như là một việc bất khả thi. Khi nghe điều này đầu tiên, hầu hết mọi
@@ -434,14 +434,14 @@ class Cessna extends Airplane {
   }
 }
 ```
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mục-lục)**
 
 ### Xóa code chết (dead code)
 Dead code cũng tệ như code trùng lặp. Không có lý do gì để giữ chúng lại trong
 codebase của bạn. Nếu nó không được gọi nữa, hãy bỏ nó đi! Nó vẫn sẽ nằm trong
 lịch sử phiên bản của bạn nếu bạn vẫn cần nó.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mục-lục)**
 
 ## **Đối tượng và Cấu trúc dữ liệu**
 ### Sử dụng getter và setter
@@ -455,7 +455,7 @@ cần phải tìm kiếm và thay đổi mỗi accessor trong codebase của b�
 * Kế thừa lớp này, bạn có thể override những hàm mặc định.
 * Bạn có thể lazy load các thuộc tính của một đối tượng, lấy nó từ server.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mục-lục)**
 
 ## **Lớp**
 ### Sử dụng hàm khởi tạo (constructor) quá nhiều biến hoặc gọi nhiều hàm set liên tiếp nhau
@@ -478,7 +478,7 @@ có ý nghĩa hơn thành phần:
 2. Bạn có thể sử dụng lại code từ lớp cơ bản (Humans có thể di chuyển giống tất cả Animals).
 3. Bạn muốn làm thay đổi toàn cục đến các lớp dẫn xuất bằng cách thay đổi lớp cơ bản.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mục-lục)**
 
 ## **SOLID**
 ### Nguyên lí đơn trách nhiệm (Single Responsibility Principle)
@@ -539,7 +539,7 @@ class UserSettings {
   }
 }
 ```
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mục-lục)**
 
 ### Nguyên lí đóng mở (Open/Closed Principle)
 Betrand Meyer đã nói "có thể thoải mái mở rộng một module, nhưng hạn chế sửa
@@ -627,7 +627,7 @@ class HttpRequester {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mục-lục)**
 
 ### Nguyên lí thay thế Liskov (Liskov Substitution Principle)
 Đây là một thuật ngữ đáng sợ cho một khái niệm rất đơn giản. Nó được định nghĩa
@@ -745,7 +745,7 @@ const shapes = [new Rectangle(4, 5), new Rectangle(4, 5), new Square(5)];
 renderLargeShapes(shapes);
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mục-lục)**
 
 ### Nguyên lí phân tách interface (Interface Segregation Principle)
 Nguyên lí phân tách interface nhấn mạnh rằng "Người dùng không nên bị bắt
@@ -758,7 +758,7 @@ cả các cài đặt. Làm cho chúng trở thành tuỳ chọn giúp tránh đ
 "fat interface".
 
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mục-lục)**
 
 ### Nguyên lí đảo ngược dependency (Dependency Inversion Principle)
 Với cách code thông thường, các module cấp cao sẽ gọi các module cấp thấp. 
@@ -847,7 +847,7 @@ public void Checkout(int orderId, int userId)
 }
 ```
 Trong thực tế, người ta thường áp dụng pattern DI (Dependency Injection) để đảm bảo nguyên lý DIP (Dependency Inversion Principle) trong code.
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mục-lục)**
 
 ## **Testing**
 Testing thì quan trọng hơn shipping. Nếu bạn không có test hoặc không đủ,
@@ -865,13 +865,13 @@ Driven Development (TDD), điều đó thật tuyệt, nhưng điểm quan trọ
 chắc chắn bạn đạt được mục tiêu về độ bao phủ trước khi launch một tính năng
 hoặc refactor một tính năng cũ nào đó.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mục-lục)**
 
 ## **Xử lí đồng thời**
 ### Hãy dùng higher-order function, đừng dùng callback tránh callback hell
-Tham khảo thư viện [ReactiveX/RxJava] (https://github.com/ReactiveX/RxJava)
+Tham khảo thư viện [ReactiveX/RxJava](https://github.com/ReactiveX/RxJava)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mục-lục)**
 
 ## **Xử lí lỗi**
 Thông báo lỗi là một điều tốt! Nghĩa là chương trình của bạn nhận dạng
@@ -911,7 +911,7 @@ try {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mục-lục)**
 
 ## **Định dạng**
 Việc định dạng code mang tính chủ quan. Giống như nhiều quy tắc được trình
@@ -929,7 +929,7 @@ file. Lí tưởng là, hãy giữ cho hàm gọi ở trên hàm được gọi.
 đọc code từ trên xuống, giống như đọc báo vậy. Do đó, hãy làm cho code của chúng
 ta cũng được đọc theo cách đó.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mục-lục)**
 
 ## **Viết chú thích**
 ### Chỉ nên viết chú thích cho những thứ có logic phức tạp.
@@ -974,7 +974,7 @@ function hashIt(data) {
 }
 
 ```
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mục-lục)**
 
 ### Đừng giữ lại những đoạn code bị chú thích
 Những công cụ quản lí phiên bản sinh ra để làm nhiệm vụ của chúng.
@@ -992,7 +992,7 @@ doStuff();
 ```javascript
 doStuff();
 ```
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mục-lục)**
 
 ### Đừng viết các chú thích nhật ký.
 Hãy nhớ, sử dụng công cụ quản lí phiên bản như Git! Chúng ta không cần những đoạn code
@@ -1018,7 +1018,7 @@ function combine(a, b) {
   return a + b;
 }
 ```
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mục-lục)**
 
 ### Tránh những đánh dấu vị trí
 Chúng thường xuyên làm nhiễu code. Hãy để những tên hàm, biến cùng với các
@@ -1053,4 +1053,4 @@ const actions = function() {
   // ...
 };
 ```
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mục-lục)**
